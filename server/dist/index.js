@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const express = require("express");
+const dotenv = require("dotenv");
+const routes_1 = require("./routes");
+dotenv.config();
+const app = express();
+app.use(express.json());
+const PORT = process.env.PORT || 3001;
+app.listen(PORT, () => console.log(`Rodando na porta ${PORT}`));
+app.use(routes_1.default);

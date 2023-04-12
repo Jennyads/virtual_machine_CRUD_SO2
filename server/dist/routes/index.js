@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const cors = require("cors");
+const express_1 = require("express");
+const product_1 = require("./product");
+const routes = (0, express_1.Router)();
+routes.use(cors());
+routes.use("/product", product_1.default);
+routes.use((req, res) => res.json({ error: "Requisição desconhecida" }));
+exports.default = routes;
