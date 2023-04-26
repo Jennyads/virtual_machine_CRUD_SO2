@@ -38,7 +38,7 @@ input {
 a.nav-link {
   font-family: 'Source Sans Pro', sans-serif;
   font-size: 14px;
-  color:#54C5CE;
+  color:pink;
 }
 
 .navbar-collapse{
@@ -117,7 +117,7 @@ svg{
 
 .bg-div{
   min-height: 95vh;
- background-color: #54C5CE;
+ background-color: plum;
 }
 
 .hf-spacing{
